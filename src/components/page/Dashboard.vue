@@ -89,29 +89,6 @@ export default {
   },
   
   mounted() {
-        var swiper = new Swiper('.swiper-container', {
-            autoplay: {
-        delay: 7000,
-        disableOnInteraction: false
-      },
-      loop: true,
-        // slidesPerView: 2,
-      effect: 'coverflow',
-      grabCursor: true,
-      // initialSlide:1,
-      centeredSlides: true,
-      slidesPerView:2,
-      coverflowEffect: {
-        rotate: 50,
-        stretch:50,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
   }
 };
 </script>

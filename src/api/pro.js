@@ -310,7 +310,7 @@ export default {
      // 预存款用户
      preList: params => {
         return http({
-            url: "/order//page/preList",
+            url: "/order/page/preList",
             method: 'get',
             params
         })

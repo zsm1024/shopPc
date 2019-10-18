@@ -11,7 +11,7 @@
       <el-container>
         <el-container>
           <el-header>
-              <el-input style="width: 180px" v-model="req.account" placeholder="请输入商品名称"></el-input>
+              <el-input style="width: 180px" v-model="req.account" placeholder="请输入账号"></el-input>
         <span class="bttn1">
           <el-button type="primary" icon="search" @click="search()">搜索</el-button>
         </span>
@@ -176,6 +176,7 @@ export default {
       let para = {};
       RoleApi.auditingList(para).then(res => {
         this.tableData = res.data.data;
+        console.log(res)
       });
     },
     // getLevelList() {
