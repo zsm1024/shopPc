@@ -1,0 +1,73 @@
+#printDataList {
+    width: 90%!important;
+    /* border: 1px solid #000!important; */
+    margin: 0 auto
+}
+
+#printDataList.printDataList {
+    width: 90%!important;
+    border: none!important;
+    margin: 0 auto
+}
+
+#printDataList .el-form-item__content {
+    margin: 0!important;
+    display: flex!important;
+}
+
+#printDataList .el-form-item__content .FormSpan {
+    display: inline-block!important;
+    width: 100%!important;
+    border: 1px solid #000!important;
+    border-bottom: none!important;
+    border-left: none!important;
+    height: 32px
+}
+
+#printDataList .el-form-item {
+    margin-bottom: 0px!important
+    /* border: 1px solid #000!important; */
+}
+
+#printDataList .el-form-item label {
+    width: 80px!important;
+    border: 1px solid #000 !important;
+    border-bottom: none!important;
+}
+
+#printDataList p .FormIline {
+    display: inline-block!important;
+    width: 80px!important;
+    border: none!important;
+    border-right: 1px solid #000!important;
+}
+
+.areaDiv {
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.areaSpan {
+    display: inline-block;
+    height: 200px;
+    width: 89px!important;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-bottom: none;
+}
+
+.areaMain {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-left: none
+}
+
+
+/* .FormIline {
+    display: inline-block!important;
+    width: 100px!important
+} */

@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px
+}
+
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+.content-box {
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding-bottom: 30px;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #f0f0f0;
+}
+
+.content {
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.content-collapse {
+    left: 65px;
+}
+
+.container {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.crumbs {
+    margin: 10px 0;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
+}
+
+
+/*Upload*/
+
+.pure-button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.g-core-image-corp-container .info-aside {
+    height: 45px;
+}
+
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+
+.el-upload--text em {
+    font-style: normal;
+}
+
+
+/*VueEditor*/
+
+.ql-container {
+    min-height: 400px;
+}
+
+.ql-snow .ql-tooltip {
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+
+.editor-btn {
+    margin-top: 20px;
+}
+
+
+/*markdown*/
+
+.v-note-wrapper .v-note-panel {
+    min-height: 500px;
+}
+
+.fa {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.el-select {
+    width: 100%
+}
+
+.buttonIco {
+    text-align: center
+}
+
+.mainContent {
+    margin-top: 10px;
+    background: #fff;
+    height: 95%
+}
+
+.filtersItem {
+    padding: 8px
+}
+
+.red {
+    color: red
+}
+
+.section {
+    height: 100%
+}
+
+.el-textarea__inner {
+    min-height: 80px!important;
+}
+
+.el-dialog {
+    max-height: 80%!important;
+    overflow: auto
+}
+
+#charts .el-dialog,
+#charts .el-dialog .el-table th,
+#charts .el-dialog .el-table tr,
+#charts .el-dialog .el-table,
+#charts .el-dialog .el-table--enable-row-hover .el-table__body tr:hover>td {
+    max-height: unset!important;
+    background: none!important;
+    -webkit-box-shadow: unset!important;
+    box-shadow: unset!important;
+}
+
+#charts #EditDialogs .el-dialog .el-dialog__headerbtn .el-dialog__close {
+    color: #fff!important;
+    font-size: 60px!important;
+    position: fixed!important;
+    top: 6%!important;
+}
+
+#charts #Indialog .el-dialog .el-dialog__headerbtn .el-dialog__close {
+    color: #fff!important;
+    font-size: 60px!important;
+    position: fixed!important;
+    top: 13%!important;
+}
+
+#charts #Indialog .el-dialog__body {
+    margin-top: 55px!important
+}
+
+#charts #Indialog .el-input__inner,
+#charts #Indialog .el-textarea__inner {
+    background: unset!important;
+    color: #fff!important
+}
+
+#charts #EditDialogs .el-dialog .el-dialog__body {
+    height: 95%!important
+}
+
+#charts #EditDialogs .el-table--border {
+    border-bottom: 1px solid #EBEEF5
+}
+
+#charts .el-dialog {
+    height: 80%!important
+}
+
+#charts .el-dialog .el-table--border {
+    border-radius: 2px!important
+}
+
+#charts .el-dialog .el-form-item__label,
+#charts .el-dialog .el-table,
+#charts .el-dialog .el-table__expanded-cell {
+    color: #fff!important
+}
+
+#charts .el-dialog .el-table::before {
+    background: unset!important
+}
+
+#charts .el-dialog .el-table--small td,
+.el-table--small th {
+    padding: 15px 0!important
+}
+
+#charts .el-dialog .el-table thead {
+    color: #fff;
+    font-weight: 500;
+    background: #1c2e8c;
+}
+
+.el-upload--text {
+    height: unset!important;
+    width: unset!important;
+    border: none!important
+}
+
+.el-table .success-row td:nth-child(10) {
+    color: #08e575!important;
+    font-weight: bold!important;
+}
+
+.el-table .primary-row td:nth-child(10) {
+    color: rgb(32, 160, 255)!important;
+    font-weight: bold!important;
+}
+
+.el-table .error-row td:nth-child(10) {
+    color: #ff3434!important;
+    font-weight: bold!important;
+}
+
+.successRow {
+    color: #08e575!important;
+    font-weight: bold!important;
+}
+
+.primaryRow {
+    color: rgb(32, 160, 255)!important;
+    font-weight: bold!important;
+}
+
+.errorRow {
+    color: #ff3434!important;
+    font-weight: bold!important;
+}
+
+.viewer-container,
+.viewer-canvas {
+    z-index: 3500!important;
+}
+
+.viewer-footer,
+.viewer-toolbar,
+.viewer-navbar {
+    z-index: 3600!important;
+}
+
+.el-form-item__label,
+.el-input--small {
+    font-size: 16px!important
+}
+
+.el-dialog__footer {
+    padding: 10px!important
+}
+
+.el-dialog__body {
+    padding: 0 !important;
+}
+
+.el-dialog__body .el-form {
+    max-height: 720px!important;
+    padding: 10px!important;
+    /* overflow: auto */
+}
+
+.Tabletile {
+    text-align: center!important;
+}
+
+#printDataList {
+    width: 90%!important;
+    /* border: 1px solid #000!important; */
+    margin: 0 auto
+}
+
+#printDataList .el-form-item {
+    margin-bottom: 0px!important
+    /* border: 1px solid #000!important; */
+}
+
+#printDataList .el-form-item label {
+    width: 80px!important;
+    border: 1px solid #000 !important;
+    border-bottom: none!important;
+}
+
+#printDataList.printDataList {
+    width: 100%!important;
+    border: none!important;
+    margin: 0 auto
+}
+
+#printDataList .el-form-item__content {
+    margin: 0!important;
+    display: flex!important;
+}
+
+#printDataList .el-form-item__content .FormSpan {
+    display: inline-block!important;
+    width: 100%!important;
+    border: 1px solid #000!important;
+    border-bottom: none!important;
+    border-left: none!important;
+    height: 32px;
+}
+
+#printDataList p .FormIline {
+    display: inline-block!important;
+    width: 78px!important;
+    border: none!important;
+    border-right: 1px solid #000!important;
+    border-left: 1px solid #000!important;
+}
+
+.areaDiv {
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.areaSpan {
+    display: inline-block;
+    height: 200px;
+    width: 92px;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+
+.areaMain {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-left: none;
+}
+
+.el-icon-menu:before {
+    font-size: 25px
+}
+
+#charts .btn-prev,
+#charts .btn-next {
+    color: #FFF!important;
+    background-color: #409EFF!important;
+    border-color: #409EFF!important;
+    height: unset;
+    margin: 10px
+}
+
+#charts .btn-prev>span,
+#charts .btn-next>span {
+    padding: 5px!important;
+    height: unset;
+    line-height: unset;
+}
+
+.el-menu-item.is-active {
+    color: #fff797!important 
+    /* color: #fff!important */
+}
+
+.timeRange {
+    text-align: center
+}
+
+.ms-content .el-input__inner {
+    padding: 20px!important
+}
+
+.el-select-dropdown.el-popper {
+    z-index: 9999!important;
+}
+
+.flexs {
+    display: flex;
+    justify-content: space-between
+}
+
+.el-date-editor {
+    width: 243px!important;
+}
+
+.el-input.is-disabled .el-input__inner,
+.el-textarea.is-disabled .el-textarea__inner,
+.el-radio__input.is-disabled+span.el-radio__label {
+    color: #606266!important
+}
+
+.ms-content #username.el-input__inner::-webkit-input-placeholder,
+.ms-content #password.el-input__inner.el-input__inner::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #000;
+}
+
+.ms-content #username.el-input__inner:-moz-placeholder,
+.ms-content #password.el-input__inner::-webkit-input-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #000;
+}
+
+.ms-content #username.el-input__inner::-moz-placeholder,
+.ms-content #password.el-input__inner::-webkit-input-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #000;
+}
+
+.ms-content #username.el-input__inner:-ms-input-placeholder,
+.ms-content #password.el-input__inner::-webkit-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #000;
+}
+
+.ms-content #username.el-input__inner,
+.ms-content #password.el-input__inner {
+    border: unset!important;
+    background-color: unset!important;
+}
+
+.ms-content .el-input-group__prepend {
+    background-color: unset!important;
+    border: none!important;
+}
+
+#usernameIcon,
+#passwordIcon {
+    background: none!important;
+}
+
+#usernameForm .el-form-item__content,
+#passwordForm .el-form-item__content {
+    border-bottom: 1px solid #a2100d!important;
+}
+
+.el-icon-lx-people:before,
+.el-icon-lx-lock:before {
+    font-size: 30px;
+    color: #9f0f0c
+}
+
+.ms-content .el-input {
+    margin-bottom: 15px
+}
+
+#username,
+#password {
+    font-size: 18px
+}
